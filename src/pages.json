@@ -1,0 +1,67 @@
+{
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/resume/index",
+      "style": {
+        "navigationBarTitleText": "简历助手 - JOBHUNT"
+      }
+    },
+    {
+      "path": "pages/course/index",
+      "style": {
+        "navigationBarTitleText": "课程活动 - JOBHUNT"
+      }
+    },
+    {
+      "path": "pages/offer/index",
+      "style": {
+        "navigationBarTitleText": "工作机会 - JOBHUNT"
+      }
+    },
+    {
+      "path": "pages/vip/index",
+      "style": {
+        "navigationBarTitleText": "VIP服务 - JOBHUNT"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/resume/index",
+        "iconPath": "static/image/icon_JL.png",
+        "selectedIconPath": "static/image/ICON_JL_SELECTED.png",
+        "text": "简历"
+      },
+      {
+        "pagePath": "pages/course/index",
+        "iconPath": "static/image/icon_KC.png",
+        "selectedIconPath": "static/image/ICON_KC_SELECTED.png",
+        "text": "课程"
+      },
+      {
+        "pagePath": "pages/offer/index",
+        "iconPath": "static/image/ICON_GW.png",
+        "selectedIconPath": "static/image/ICON_GW_SELECTED.png",
+        "text": "岗位"
+      },
+      {
+        "pagePath": "pages/vip/index",
+        "iconPath": "static/image/ICON_VIP.png",
+        "selectedIconPath": "static/image/ICON_VIP_SELECTED.png",
+        "text": "服务"
+      }
+    ]
+  }
+}
