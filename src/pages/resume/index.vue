@@ -15,7 +15,39 @@
       <text class="sub-title">支持PDF、Word格式简历，90%以上内容识别率，自动排版</text>
     </view>
 
-    <text class="sub-title">{{title}}</text>
+
+    <scroll-view scroll-x="true" class="scroll-view_H">
+
+      <view class="resume-box">
+        <navigator url="/pages/resume/detail?id=1">
+          <view class="resume">
+            <image class="img" src="/static/image/img_resume.png"></image>
+            <text>未命名asa</text>
+          </view>
+        </navigator>
+      </view>
+      <view class="resume-box">
+        <navigator url="/pages/resume/detail?id=1">
+          <view class="resume">
+            <image class="img" src="/static/image/img_resume.png"></image>
+          </view>
+        </navigator>
+      </view>
+      <view class="resume-box">
+        <navigator url="/pages/resume/detail?id=1">
+          <view class="resume">
+            <image class="img" src="/static/image/img_resume.png"></image>
+          </view>
+        </navigator>
+      </view>
+      <view class="resume-box">
+        <navigator url="/pages/resume/detail?id=1">
+          <view class="resume">
+            <image class="img" src="/static/image/img_resume.png"></image>
+          </view>
+        </navigator>
+      </view>
+    </scroll-view>
   </view>
 </template>
 
@@ -32,15 +64,16 @@ export default {
   methods: {
     onClick: function (e) {
       console.log(11111111111111)
-      this.title="111212"
+      this.title = "111212"
     },
 
-    chooseFile:function (e) {
+
+    chooseFile: function (e) {
       let that = this;
       wx.chooseMessageFile({
         count: 1, //限制选择的文件数量
         type: 'file',//非图片和视频的文件,不选默认为all
-        extension:['xls', 'xlsx'],//此处限制文件类型
+        extension: ['xls', 'xlsx'],//此处限制文件类型
         // extension: ['xls', 'xlsx'], //此处限制文件类型
         success(res) {
           const tempFilePaths = res.tempFiles
@@ -108,6 +141,31 @@ export default {
 
   font-size: 28rpx;
   color: #999;
+}
+
+.scroll-view_H {
+  white-space: nowrap;
+  width: 100%;
+}
+
+.resume-box {
+  display: inline-block;
+  width: 33%;
+}
+
+.resume {
+  background: #FFFFCC;
+  display: flex;
+  flex-direction: column;
+  height: 300rpx;
+  padding: 16rpx;
+  border: 1px solid #eee;
+  margin: 8rpx;
+}
+
+.img {
+  width: 64rpx;
+  height: 64rpx;
 }
 
 </style>

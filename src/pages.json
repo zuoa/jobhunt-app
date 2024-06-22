@@ -8,6 +8,12 @@
       }
     },
     {
+      "path": "pages/resume/detail",
+      "style": {
+        "navigationBarTitleText": "简历助手 - JOBHUNT"
+      }
+    },
+    {
       "path": "pages/course/index",
       "style": {
         "navigationBarTitleText": "课程活动 - JOBHUNT"
