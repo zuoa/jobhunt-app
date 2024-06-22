@@ -116,15 +116,16 @@ export default {
 }
 
 .big-button {
+  color:#FFF;
   width: 90%;
-  margin: 2%;
-  height: 200rpx;
-  background: #F9F9F9;
-
+  margin: 16rpx 2%;
   padding: 3%;
+  height: 200rpx;
+  background: #2775b6;
+
   border: 1px solid #ddd;
   border-radius: 8rpx;
-  box-shadow: 0 5rpx 15rpx #eee;
+  box-shadow: 0 0 15rpx #eee;
 }
 
 .text-area {
@@ -134,13 +135,13 @@ export default {
 
 .title {
   font-size: 48rpx;
-  color: #333;
+  color: #fff;
 }
 
 .sub-title {
 
   font-size: 28rpx;
-  color: #999;
+  color: #EEE;
 }
 
 .scroll-view_H {
